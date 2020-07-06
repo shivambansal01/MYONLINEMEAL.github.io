@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        li{
+            list-style: none;
+            border: 2px solid brown;
+            background-color: grey;
+            border-radius: 20px;
+            font-weight: bold;
+            color: black;
+            padding: 2px 15px;
+}
+li:hover{
+    color: green;
+    background-color: red;
+}
+.inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0{
+    background-color: red;
+    border: 2px solid black;
+    color: black;
+}
+header::before{
+  opacity: 0.2;
+  z-index: -1;
+}
+body{
+       background: url(https://source.unsplash.com/collection/190727/1600x900) no-repeat center center/cover;
+      }
+      p span{
+        background-color: yellow;
+        color: blue;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      h2{
+        background-color: grey;
+      }
+      header{
+        position: sticky;
+        top: 0px;
+      }
+
+     
+    </style>
+</head>
+<body>
+  
+    <header class="text-gray-700 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">MYMEAL</span>
+          </a>
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+            <li class="mr-5 hover:text-gray-900"><a href='/'>home</a></li>
+            <li class="mr-5 hover:text-gray-900"><a href='/services'>services</a></li>
+            <li class="mr-5 hover:text-gray-900"><a href='/contact'>contact us</a></li>
+            <li class="mr-5 hover:text-gray-900"><a href='/clients'> our clients</a></li>
+          </nav>
+          <button class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0"><a href='/order'>Order Now</a>
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+
+      
+      <section class="text-gray-700 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-col">
+          <div class="lg:w-4/6 mx-auto">
+            <!-- <div class="rounded-lg h-64 overflow-hidden">
+              <img alt="" class="object-cover object-center h-full w-full" src="">
+            </div> -->
+            <div class="flex flex-col sm:flex-row mt-10">
+              <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+                  <img src="data:image/jpeg;base64,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" alt="Error in loading image">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </div>
+                <div class="flex flex-col items-center text-center justify-center">
+                  <h2 class="font-medium title-font mt-4 text-gray-900 text-lg"><b>Welcome to MYMEAL</b></h2>
+                  <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+                  <p class="text-base text-gray-600"></p>
+                </div>
+              </div>
+              <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                <p class="leading-relaxed text-lg mb-4"><span>Meggings portland fingerstache lyft, post-ironic fixie man bun banh mi umami everyday carry hexagon locavore direct trade art party. Locavore small batch listicle gastropub farm-to-table lumbersexual salvia messenger bag. Coloring book flannel truffaut craft beer drinking vinegar sartorial, disrupt fashion axe normcore meh butcher. Portland 90's scenester vexillologist forage post-ironic asymmetrical, chartreuse disrupt butcher paleo intelligentsia pabst before they sold out four loko. 3 wolf moon brooklyn.</span></p>
+                <a class="text-indigo-500 inline-flex items-center">Learn More
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>
